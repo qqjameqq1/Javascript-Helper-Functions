@@ -1,0 +1,45 @@
+<Html>
+<Head>
+    <Title></Title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-Language" content="UTF-8">
+
+    <script type="text/javascript" src="code.js"></script>
+</Head>
+
+<Body>
+
+<script type="text/javascript">
+//-------------------------------------------------------
+//範例
+//-------------------------------------------------------
+
+    //---------------------------------------------------
+    //setCookie(name,value,expires,path,domain,secure)
+    //---------------------------------------------------
+    //設定cookie
+    //---------------------------------------------------
+    //name      cookie的名稱
+    //value     cookie的值,注意:超出4000個字元,會被截斷
+    //expires   cookie的有效時間,注意:傳入的是日期物件
+    //path      cookie的允許路徑
+    //domain    cookie的允許網域
+    //secure    cookie的傳遞是否須在加密環境Https,true | false
+
+    window.onload=function(){
+        var date  ="2012/08/27 00:00:00";
+        var o_date=new Date(date);
+
+        //setCookie("name1","value1",o_date);
+        //setCookie("name2","value2",o_date);
+        //deleteCookie("name1");
+        //deleteCookie("name2");
+
+        var name1=getCookie("name1");
+        var name2=getCookie("name2");
+        alert(name1+','+name2);
+    }
+</script>
+
+</Body>
+</Html>

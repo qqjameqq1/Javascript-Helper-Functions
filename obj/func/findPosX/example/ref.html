@@ -1,0 +1,52 @@
+<Html>
+<Head>
+    <Title></Title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-Language" content="UTF-8">
+
+    <script type="text/javascript" src="../code.js"></script>
+    <style>
+        body{
+            margin:0px;
+        }
+        #pdiv{
+            position:relative;
+            width:300px;
+            height:200px;
+            border:1px solid #f00;
+            left:100px;
+            top:100px;
+        }
+        #sdiv{
+            position:absolute;
+            width:50px;
+            height:50px;
+            border:1px solid #0f0;
+            left:50px;
+            top:50px;
+        }
+    </style>
+</Head>
+
+<Body>
+
+<div id="pdiv">
+    <div id="sdiv">
+        子div
+    </div>
+</div>
+
+<script type="text/javascript">
+//-------------------------------------------------------
+//頁面初始
+//-------------------------------------------------------
+    var opdiv=document.getElementById("pdiv");
+    var osdiv=document.getElementById("sdiv");
+
+    //x = opdiv.left + osdiv.left=100+50=150
+    var x=findPosX(osdiv);
+    alert(x);
+</script>
+
+</Body>
+</Html>

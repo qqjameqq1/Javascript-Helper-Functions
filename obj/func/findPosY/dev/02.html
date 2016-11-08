@@ -1,0 +1,71 @@
+<Html>
+<Head>
+    <Title></Title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-Language" content="UTF-8">
+    <style>
+        #pdiv{
+            position:relative;
+            width:300px;
+            height:200px;
+            border:1px solid #f00;
+        }
+        #sdiv{
+            position:absolute;
+            width:50px;
+            height:50px;
+            border:1px solid #0f0;
+        }
+    </style>
+</Head>
+
+<Body>
+
+<div id="pdiv">
+    <div id="sdiv">
+        子div
+    </div>
+</div>
+
+<script type="text/javascript">
+//-------------------------------------------------------
+//頁面初始
+//-------------------------------------------------------
+    var opdiv=document.getElementById("pdiv");
+    var osdiv=document.getElementById("sdiv");
+
+    var y=findPosY(osdiv);
+    alert(y);
+
+    function findPosY(target){
+    //---------------------------------------------------
+    //取得物件y座標,相對於頁面原點(左上角)
+    //---------------------------------------------------
+
+        if((!target)||(target==undefined)){
+            return false;
+        }
+        if(typeof(target)==="object"){
+            var obj=target;
+        }else{
+            var obj=document.getElementById(target);
+        }
+
+		var curtop = 0;
+		if(obj.offsetParent)
+			while(1)
+			{
+			  curtop += obj.offsetTop;
+			  if(!obj.offsetParent)
+				break;
+			  obj = obj.offsetParent;
+			}
+		else if(obj.y)
+			curtop += obj.y;
+		return curtop;
+    }
+</script>
+
+
+</Body>
+</Html>

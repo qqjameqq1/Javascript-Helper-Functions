@@ -1,0 +1,53 @@
+/* 頁籤選單 */
+.tab_menu{
+    list-style:none;
+    padding:0;
+    margin:0;
+    margin-top:10px;
+}
+.tab_menu li{
+    display:inline;
+    padding:5px;
+
+    margin:0;
+    margin-right:1px;
+
+    border:1px solid #ccc;
+    border-bottom:0px solid #ccc;
+}
+.tab_menu li.on{
+    background:#6699ff;
+}
+.tab_menu li.off{
+    background:#ffffff;
+}
+.tab_menu li a{
+    color:#333;
+    text-decoration:none;
+}
+.tab_menu li a:hover{
+    color:#f00;
+    text-decoration:underline;
+}
+
+/* 頁籤內容 */
+.tab_cont{
+    position:relative;
+    top:4px;
+    z-index:10;
+
+    padding:10px;
+    margin:0;
+    margin-bottom:4px;
+
+    border:1px solid #ccc;
+
+    background:#e1e1e1;
+    color:#333;
+}
+.tab_cont div{
+    border:0px solid #f00;
+}
+.tab_cont div.hide{
+    display:none;
+}

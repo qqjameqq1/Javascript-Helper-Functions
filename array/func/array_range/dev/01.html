@@ -1,0 +1,48 @@
+<Html>
+<Head>
+    <Title></Title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-Language" content="UTF-8">
+
+</Head>
+
+<Body>
+
+
+<script type="text/javascript">
+//-------------------------------------------------------
+//頁面初始
+//-------------------------------------------------------
+
+    var arry1=array_range(s=0,e=5,step=1);  //0,1,2,3,4,5
+    var arry2=array_range(s=-5,e=0,step=1); //-5,-4,-3,-2,-1,0
+    var arry3=array_range(s=0,e=10,step=3); //0,3,6,9
+    alert(arry3);
+
+    function array_range(s,e,step){
+    //---------------------------------------------------
+    //值域數值陣列
+    //---------------------------------------------------
+    //s     起始值
+    //e     終止值
+    //step  遞增數,預設1,可以指定負整數
+    //---------------------------------------------------
+
+        if(!step){
+            step=1;
+        }else{
+            step=parseInt(step);
+        }
+
+        var arry=[];
+        while(s<=e){
+            arry.push(s);
+            s=s+step;
+        }
+
+        return arry;
+    }
+</script>
+
+</Body>
+</Html>

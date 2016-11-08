@@ -1,0 +1,56 @@
+<Html>
+<Head>
+    <Title></Title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-Language" content="UTF-8">
+    <style>
+        #div1{
+            position:relative;
+            width:300px;
+            height:200px;
+            border:1px solid #f00;
+        }
+    </style>
+</Head>
+
+<Body>
+
+<div id="div1">
+    div1
+</div>
+
+<script type="text/javascript">
+//-------------------------------------------------------
+//頁面初始
+//-------------------------------------------------------
+    var odiv1=document.getElementById("div1");
+
+    var info=get_wh(odiv1);
+    alert(info.w+','+info.h);
+
+    function get_wh(target){
+    //---------------------------------------------------
+    //取得物件寬高尺寸,回傳物件
+    //---------------------------------------------------
+    //obj.w 物件寬度
+    //obj.h 物件高度
+    //---------------------------------------------------
+
+        if((!target)||(target==undefined)){
+            return false;
+        }
+        if(typeof(target)==="object"){
+            var obj=target;
+        }else{
+            var obj=document.getElementById(target);
+        }
+
+        return info={
+            'w':obj.offsetWidth,
+            'h':obj.offsetHeight
+        };
+    }
+</script>
+
+</Body>
+</Html>

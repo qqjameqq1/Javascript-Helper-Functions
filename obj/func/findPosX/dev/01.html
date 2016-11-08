@@ -1,0 +1,56 @@
+<Html>
+<Head>
+    <Title></Title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-Language" content="UTF-8">
+</Head>
+
+<Body>
+
+<div id="pdiv" style="position:relative;width:300px;height:200px;border:1px solid #f00;">
+    <div id="sdiv" style="position:absolute;width:50px;height:50px;border:1px solid #0f0;">
+        子div
+    </div>
+</div>
+
+<script type="text/javascript">
+//-------------------------------------------------------
+//頁面初始
+//-------------------------------------------------------
+    var opdiv=document.getElementById("pdiv");
+    var osdiv=document.getElementById("sdiv");
+
+    var x=findPosX(osdiv);
+    alert(x);
+
+    function findPosX(target){
+    //---------------------------------------------------
+    //取得物件x座標,相對於頁面原點(左上角)
+    //---------------------------------------------------
+
+        if((!target)||(target==undefined)){
+            return false;
+        }
+        if(typeof(target)==="object"){
+            var obj=target;
+        }else{
+            var obj=document.getElementById(target);
+        }
+
+        var curleft = 0;
+        if(obj.offsetParent)
+            while(1)
+            {
+              curleft += obj.offsetLeft;
+              if(!obj.offsetParent)
+                break;
+              obj = obj.offsetParent;
+            }
+        else if(obj.x)
+            curleft += obj.x;
+        return curleft;
+    }
+</script>
+
+</Body>
+</Html>
