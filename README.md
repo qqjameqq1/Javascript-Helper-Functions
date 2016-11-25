@@ -1,19 +1,13 @@
 # ajax 
-|                |
-|:---------------|
-| some wordy text|
-| centered       |
-| are neat       |
-| 測試           |
-
-# ajax
-ajax_encode()     將參數予以 encodeURI 處理,以便使用ajax傳送
-ajax_get()        使用get方法,送出ajax要求
-ajax_getxml()     使用get方法,送出ajax要求
-ajax_post()       使用post方法,送出ajax要求
-ajax_postxml()    使用post方法,送出ajax要求
-ajax_urlencode()  建立參數經 encodeURI 處理過的網址,以便使用ajax傳送
-ajax_xmlhttp()    取回XMLHttp物件
+|                 |                                                  |
+|:----------------|:-------------------------------------------------|
+|ajax_encode()    |將參數予以 encodeURI 處理,以便使用ajax傳送        |
+|ajax_get()       |使用get方法,送出ajax要求                          |
+|ajax_getxml()    |使用get方法,送出ajax要求                          |
+|ajax_post()      |使用post方法,送出ajax要求                         |
+|ajax_postxml()   |使用post方法,送出ajax要求                         |
+|ajax_urlencode() |建立參數經 encodeURI 處理過的網址,以便使用ajax傳送|
+|ajax_xmlhttp()   |取回XMLHttp物件                                   |
 
 # array
 array2str()               陣列轉字串                                                        
