@@ -1,4 +1,4 @@
-# ajax
+|# ajax          |
 |:---------------|
 | some wordy text|
 | centered       |
