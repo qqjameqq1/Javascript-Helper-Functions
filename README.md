@@ -1,9 +1,9 @@
-| Center Aligned  |
-|:---------------:|
-| some wordy text |
-| centered        |
-| are neat        |
-| 測試            |
+|                |
+|:---------------|
+| some wordy text|
+| centered       |
+| are neat       |
+| 測試           |
 
 # ajax
 ajax_encode()     將參數予以 encodeURI 處理,以便使用ajax傳送
