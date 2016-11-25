@@ -1,3 +1,7 @@
+ A | B 
+---|---
+123|456
+
 # ajax
 ajax_encode()     將參數予以 encodeURI 處理,以便使用ajax傳送
 ajax_get()        使用get方法,送出ajax要求
