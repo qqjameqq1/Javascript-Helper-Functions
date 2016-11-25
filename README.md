@@ -1,4 +1,6 @@
-# ajax 
+# Javascript-Helper-Functions
+
+## ajax 
 |Function Name    |Function Description                              |
 |:----------------|:-------------------------------------------------|
 |ajax_encode()    |將參數予以 encodeURI 處理,以便使用ajax傳送        |
@@ -9,7 +11,7 @@
 |ajax_urlencode() |建立參數經 encodeURI 處理過的網址,以便使用ajax傳送|
 |ajax_xmlhttp()   |取回XMLHttp物件                                   |
 
-# array
+## array
 |Function Name             |Function Description                         |
 |:-------------------------|:--------------------------------------------|
 |array2str()               |陣列轉字串                                   |
