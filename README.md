@@ -1,9 +1,9 @@
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| zebra stripes | are neat        |    $1 |
-| test | 測試        |    $3333 |
+| Center Aligned  |
+|:---------------:|
+| some wordy text |
+| centered        |
+| are neat        |
+| 測試            |
 
 # ajax
 ajax_encode()     將參數予以 encodeURI 處理,以便使用ajax傳送
