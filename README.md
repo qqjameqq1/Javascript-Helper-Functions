@@ -263,3 +263,5 @@
 |ch_twsid()         |檢核台灣地區身分證字號     |
 |ch_valbetween()    |檢核值範圍                 |
 |ch_year()          |檢核年份                   |
+
+## License
