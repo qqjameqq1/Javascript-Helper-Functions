@@ -1,4 +1,4 @@
-# Javascript-Helper-Functions Test
+# Javascript-Helper-Functions 
 
 ## ajax 
 |Function Name    |Function Description                              |
